@@ -22,109 +22,139 @@ Partial Class Register
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label2 = New Label()
-        btnRegister = New Button()
+        btnGoLogin = New Button()
         Label1 = New Label()
-        PictureBox1 = New PictureBox()
         btnSignUp = New Button()
         txtPassword = New TextBox()
         txtUsername = New TextBox()
+        lblUsername = New Label()
+        btnClear = New Button()
+        lblPassword = New Label()
+        PictureBox1 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label2
+        ' btnGoLogin
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = SystemColors.Control
-        Label2.Location = New Point(36, 397)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(152, 23)
-        Label2.TabIndex = 13
-        Label2.Text = "Already an admin?"
-        ' 
-        ' btnRegister
-        ' 
-        btnRegister.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnRegister.ForeColor = SystemColors.ActiveCaptionText
-        btnRegister.Location = New Point(194, 394)
-        btnRegister.Name = "btnRegister"
-        btnRegister.Size = New Size(100, 29)
-        btnRegister.TabIndex = 12
-        btnRegister.Text = "Login"
-        btnRegister.UseVisualStyleBackColor = True
+        btnGoLogin.BackgroundImageLayout = ImageLayout.None
+        btnGoLogin.Font = New Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnGoLogin.ForeColor = SystemColors.ActiveCaptionText
+        btnGoLogin.Location = New Point(177, 350)
+        btnGoLogin.Name = "btnGoLogin"
+        btnGoLogin.Size = New Size(173, 27)
+        btnGoLogin.TabIndex = 12
+        btnGoLogin.Text = "Already an admin?"
+        btnGoLogin.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.Control
-        Label1.Location = New Point(102, 33)
+        Label1.Location = New Point(183, 66)
         Label1.Name = "Label1"
         Label1.Size = New Size(167, 54)
         Label1.TabIndex = 8
         Label1.Text = "Register"
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Location = New Point(417, 33)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(478, 410)
-        PictureBox1.TabIndex = 7
-        PictureBox1.TabStop = False
-        ' 
         ' btnSignUp
         ' 
-        btnSignUp.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnSignUp.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnSignUp.ForeColor = SystemColors.ActiveCaptionText
-        btnSignUp.Location = New Point(102, 275)
+        btnSignUp.Location = New Point(271, 296)
         btnSignUp.Name = "btnSignUp"
-        btnSignUp.Size = New Size(156, 35)
+        btnSignUp.Size = New Size(100, 35)
         btnSignUp.TabIndex = 16
         btnSignUp.Text = "Sign Up"
         btnSignUp.UseVisualStyleBackColor = True
         ' 
         ' txtPassword
         ' 
-        txtPassword.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassword.Location = New Point(64, 206)
+        txtPassword.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtPassword.Location = New Point(141, 231)
         txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(230, 43)
+        txtPassword.Size = New Size(230, 34)
         txtPassword.TabIndex = 15
         ' 
         ' txtUsername
         ' 
-        txtUsername.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(64, 137)
+        txtUsername.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtUsername.Location = New Point(141, 165)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(230, 43)
+        txtUsername.Size = New Size(230, 34)
         txtUsername.TabIndex = 14
+        ' 
+        ' lblUsername
+        ' 
+        lblUsername.AutoSize = True
+        lblUsername.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblUsername.ForeColor = SystemColors.Control
+        lblUsername.Location = New Point(25, 168)
+        lblUsername.Name = "lblUsername"
+        lblUsername.Size = New Size(99, 28)
+        lblUsername.TabIndex = 17
+        lblUsername.Text = "Username"
+        ' 
+        ' btnClear
+        ' 
+        btnClear.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnClear.ForeColor = SystemColors.ActiveCaptionText
+        btnClear.Location = New Point(141, 296)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(100, 35)
+        btnClear.TabIndex = 18
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = True
+        ' 
+        ' lblPassword
+        ' 
+        lblPassword.AutoSize = True
+        lblPassword.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblPassword.ForeColor = SystemColors.Control
+        lblPassword.Location = New Point(25, 234)
+        lblPassword.Name = "lblPassword"
+        lblPassword.Size = New Size(93, 28)
+        lblPassword.TabIndex = 19
+        lblPassword.Text = "Password"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackgroundImage = My.Resources.Resources.floatsIcon
+        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox1.Location = New Point(45, 7)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(150, 158)
+        PictureBox1.TabIndex = 20
+        PictureBox1.TabStop = False
         ' 
         ' Register
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
-        ClientSize = New Size(958, 477)
+        ClientSize = New Size(444, 406)
+        Controls.Add(PictureBox1)
+        Controls.Add(lblPassword)
+        Controls.Add(btnClear)
+        Controls.Add(lblUsername)
         Controls.Add(btnSignUp)
         Controls.Add(txtPassword)
         Controls.Add(txtUsername)
-        Controls.Add(Label2)
-        Controls.Add(btnRegister)
+        Controls.Add(btnGoLogin)
         Controls.Add(Label1)
-        Controls.Add(PictureBox1)
         Name = "Register"
         Text = "Register"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnRegister As Button
+    Friend WithEvents btnGoLogin As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnSignUp As Button
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUsername As TextBox
+    Friend WithEvents lblUsername As Label
+    Friend WithEvents btnClear As Button
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
