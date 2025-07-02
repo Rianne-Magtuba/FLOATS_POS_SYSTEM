@@ -22,419 +22,469 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.classicTab = New System.Windows.Forms.TabPage()
-        Me.caffeineTab = New System.Windows.Forms.TabPage()
-        Me.candyTab = New System.Windows.Forms.TabPage()
-        Me.listOfItemOrder = New System.Windows.Forms.ListBox()
-        Me.ItemNamelbl = New System.Windows.Forms.Label()
-        Me.quantityLabel = New System.Windows.Forms.Label()
-        Me.sizeLabel = New System.Windows.Forms.Label()
-        Me.priceLabel = New System.Windows.Forms.Label()
-        Me.sizeLbl = New System.Windows.Forms.Label()
-        Me.itemQuantityLbl = New System.Windows.Forms.Label()
-        Me.addButt = New System.Windows.Forms.Button()
-        Me.minusButt = New System.Windows.Forms.Button()
-        Me.itemQuantity = New System.Windows.Forms.Label()
-        Me.largeSizeButt = New System.Windows.Forms.Button()
-        Me.mediumSizeButt = New System.Windows.Forms.Button()
-        Me.totalLbl = New System.Windows.Forms.Label()
-        Me.removeButt = New System.Windows.Forms.Button()
-        Me.clearButt = New System.Windows.Forms.Button()
-        Me.compButt = New System.Windows.Forms.Button()
-        Me.totalPriceLbl = New System.Windows.Forms.Label()
-        Me.cokeFloat = New System.Windows.Forms.Button()
-        Me.spriteFloat = New System.Windows.Forms.Button()
-        Me.rootBFloat = New System.Windows.Forms.Button()
-        Me.mochaFloat = New System.Windows.Forms.Button()
-        Me.cofFloat = New System.Windows.Forms.Button()
-        Me.blueOceanFloat = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.backButt = New System.Windows.Forms.Label()
-        Me.TabControl1.SuspendLayout()
-        Me.classicTab.SuspendLayout()
-        Me.caffeineTab.SuspendLayout()
-        Me.candyTab.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.classicTab)
-        Me.TabControl1.Controls.Add(Me.caffeineTab)
-        Me.TabControl1.Controls.Add(Me.candyTab)
-        Me.TabControl1.Location = New System.Drawing.Point(42, 148)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(569, 362)
-        Me.TabControl1.TabIndex = 1
-        '
-        'classicTab
-        '
-        Me.classicTab.Controls.Add(Me.rootBFloat)
-        Me.classicTab.Controls.Add(Me.spriteFloat)
-        Me.classicTab.Controls.Add(Me.cokeFloat)
-        Me.classicTab.Location = New System.Drawing.Point(4, 22)
-        Me.classicTab.Name = "classicTab"
-        Me.classicTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.classicTab.Size = New System.Drawing.Size(561, 336)
-        Me.classicTab.TabIndex = 0
-        Me.classicTab.Text = "Classic"
-        Me.classicTab.UseVisualStyleBackColor = True
-        '
-        'caffeineTab
-        '
-        Me.caffeineTab.Controls.Add(Me.mochaFloat)
-        Me.caffeineTab.Controls.Add(Me.cofFloat)
-        Me.caffeineTab.Location = New System.Drawing.Point(4, 22)
-        Me.caffeineTab.Name = "caffeineTab"
-        Me.caffeineTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.caffeineTab.Size = New System.Drawing.Size(561, 336)
-        Me.caffeineTab.TabIndex = 1
-        Me.caffeineTab.Text = "Caffeine"
-        Me.caffeineTab.UseVisualStyleBackColor = True
-        '
-        'candyTab
-        '
-        Me.candyTab.Controls.Add(Me.blueOceanFloat)
-        Me.candyTab.Location = New System.Drawing.Point(4, 22)
-        Me.candyTab.Name = "candyTab"
-        Me.candyTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.candyTab.Size = New System.Drawing.Size(561, 336)
-        Me.candyTab.TabIndex = 2
-        Me.candyTab.Text = "Candy"
-        Me.candyTab.UseVisualStyleBackColor = True
-        '
-        'listOfItemOrder
-        '
-        Me.listOfItemOrder.Location = New System.Drawing.Point(673, 170)
-        Me.listOfItemOrder.Name = "listOfItemOrder"
-        Me.listOfItemOrder.Size = New System.Drawing.Size(308, 342)
-        Me.listOfItemOrder.TabIndex = 2
-        '
-        'ItemNamelbl
-        '
-        Me.ItemNamelbl.AutoSize = True
-        Me.ItemNamelbl.BackColor = System.Drawing.Color.Black
-        Me.ItemNamelbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ItemNamelbl.ForeColor = System.Drawing.Color.White
-        Me.ItemNamelbl.Location = New System.Drawing.Point(670, 154)
-        Me.ItemNamelbl.Name = "ItemNamelbl"
-        Me.ItemNamelbl.Size = New System.Drawing.Size(67, 13)
-        Me.ItemNamelbl.TabIndex = 3
-        Me.ItemNamelbl.Text = "Item Name"
-        '
-        'quantityLabel
-        '
-        Me.quantityLabel.AutoSize = True
-        Me.quantityLabel.BackColor = System.Drawing.Color.Black
-        Me.quantityLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.quantityLabel.ForeColor = System.Drawing.Color.White
-        Me.quantityLabel.Location = New System.Drawing.Point(775, 154)
-        Me.quantityLabel.Name = "quantityLabel"
-        Me.quantityLabel.Size = New System.Drawing.Size(54, 13)
-        Me.quantityLabel.TabIndex = 4
-        Me.quantityLabel.Text = "Quantity"
-        '
-        'sizeLabel
-        '
-        Me.sizeLabel.AutoSize = True
-        Me.sizeLabel.BackColor = System.Drawing.Color.Black
-        Me.sizeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sizeLabel.ForeColor = System.Drawing.Color.White
-        Me.sizeLabel.Location = New System.Drawing.Point(871, 154)
-        Me.sizeLabel.Name = "sizeLabel"
-        Me.sizeLabel.Size = New System.Drawing.Size(31, 13)
-        Me.sizeLabel.TabIndex = 5
-        Me.sizeLabel.Text = "Size"
-        '
-        'priceLabel
-        '
-        Me.priceLabel.AutoSize = True
-        Me.priceLabel.BackColor = System.Drawing.Color.Black
-        Me.priceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.priceLabel.ForeColor = System.Drawing.Color.White
-        Me.priceLabel.Location = New System.Drawing.Point(945, 154)
-        Me.priceLabel.Name = "priceLabel"
-        Me.priceLabel.Size = New System.Drawing.Size(36, 13)
-        Me.priceLabel.TabIndex = 6
-        Me.priceLabel.Text = "Price"
-        '
-        'sizeLbl
-        '
-        Me.sizeLbl.AutoSize = True
-        Me.sizeLbl.BackColor = System.Drawing.Color.Black
-        Me.sizeLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sizeLbl.ForeColor = System.Drawing.Color.White
-        Me.sizeLbl.Location = New System.Drawing.Point(39, 517)
-        Me.sizeLbl.Name = "sizeLbl"
-        Me.sizeLbl.Size = New System.Drawing.Size(31, 13)
-        Me.sizeLbl.TabIndex = 7
-        Me.sizeLbl.Text = "Size"
-        '
-        'itemQuantityLbl
-        '
-        Me.itemQuantityLbl.AutoSize = True
-        Me.itemQuantityLbl.BackColor = System.Drawing.Color.Black
-        Me.itemQuantityLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.itemQuantityLbl.ForeColor = System.Drawing.Color.White
-        Me.itemQuantityLbl.Location = New System.Drawing.Point(527, 511)
-        Me.itemQuantityLbl.Name = "itemQuantityLbl"
-        Me.itemQuantityLbl.Size = New System.Drawing.Size(59, 15)
-        Me.itemQuantityLbl.TabIndex = 8
-        Me.itemQuantityLbl.Text = "Quantity"
-        '
-        'addButt
-        '
-        Me.addButt.BackColor = System.Drawing.Color.Black
-        Me.addButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.addButt.ForeColor = System.Drawing.Color.White
-        Me.addButt.Location = New System.Drawing.Point(508, 533)
-        Me.addButt.Name = "addButt"
-        Me.addButt.Size = New System.Drawing.Size(23, 23)
-        Me.addButt.TabIndex = 9
-        Me.addButt.Text = "+"
-        Me.addButt.UseVisualStyleBackColor = False
-        '
-        'minusButt
-        '
-        Me.minusButt.BackColor = System.Drawing.Color.Black
-        Me.minusButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.minusButt.ForeColor = System.Drawing.Color.White
-        Me.minusButt.Location = New System.Drawing.Point(584, 533)
-        Me.minusButt.Name = "minusButt"
-        Me.minusButt.Size = New System.Drawing.Size(23, 23)
-        Me.minusButt.TabIndex = 10
-        Me.minusButt.Text = "-"
-        Me.minusButt.UseVisualStyleBackColor = False
-        '
-        'itemQuantity
-        '
-        Me.itemQuantity.AutoSize = True
-        Me.itemQuantity.BackColor = System.Drawing.Color.Black
-        Me.itemQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.itemQuantity.ForeColor = System.Drawing.Color.White
-        Me.itemQuantity.Location = New System.Drawing.Point(548, 533)
-        Me.itemQuantity.Name = "itemQuantity"
-        Me.itemQuantity.Size = New System.Drawing.Size(21, 24)
-        Me.itemQuantity.TabIndex = 11
-        Me.itemQuantity.Text = "0"
-        '
-        'largeSizeButt
-        '
-        Me.largeSizeButt.BackColor = System.Drawing.Color.Black
-        Me.largeSizeButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.largeSizeButt.ForeColor = System.Drawing.Color.White
-        Me.largeSizeButt.Location = New System.Drawing.Point(42, 533)
-        Me.largeSizeButt.Name = "largeSizeButt"
-        Me.largeSizeButt.Size = New System.Drawing.Size(91, 23)
-        Me.largeSizeButt.TabIndex = 12
-        Me.largeSizeButt.Text = "Large"
-        Me.largeSizeButt.UseVisualStyleBackColor = False
-        '
-        'mediumSizeButt
-        '
-        Me.mediumSizeButt.BackColor = System.Drawing.Color.Black
-        Me.mediumSizeButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.mediumSizeButt.ForeColor = System.Drawing.Color.White
-        Me.mediumSizeButt.Location = New System.Drawing.Point(148, 533)
-        Me.mediumSizeButt.Name = "mediumSizeButt"
-        Me.mediumSizeButt.Size = New System.Drawing.Size(91, 23)
-        Me.mediumSizeButt.TabIndex = 13
-        Me.mediumSizeButt.Text = "Medium"
-        Me.mediumSizeButt.UseVisualStyleBackColor = False
-        '
-        'totalLbl
-        '
-        Me.totalLbl.AutoSize = True
-        Me.totalLbl.BackColor = System.Drawing.Color.Black
-        Me.totalLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.totalLbl.ForeColor = System.Drawing.Color.White
-        Me.totalLbl.Location = New System.Drawing.Point(670, 515)
-        Me.totalLbl.Name = "totalLbl"
-        Me.totalLbl.Size = New System.Drawing.Size(73, 13)
-        Me.totalLbl.TabIndex = 14
-        Me.totalLbl.Text = "Total Price:"
-        '
-        'removeButt
-        '
-        Me.removeButt.BackColor = System.Drawing.Color.Black
-        Me.removeButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.removeButt.ForeColor = System.Drawing.Color.White
-        Me.removeButt.Location = New System.Drawing.Point(673, 533)
-        Me.removeButt.Name = "removeButt"
-        Me.removeButt.Size = New System.Drawing.Size(91, 23)
-        Me.removeButt.TabIndex = 15
-        Me.removeButt.Text = "Remove Item"
-        Me.removeButt.UseVisualStyleBackColor = False
-        '
-        'clearButt
-        '
-        Me.clearButt.BackColor = System.Drawing.Color.Black
-        Me.clearButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.clearButt.ForeColor = System.Drawing.Color.White
-        Me.clearButt.Location = New System.Drawing.Point(673, 562)
-        Me.clearButt.Name = "clearButt"
-        Me.clearButt.Size = New System.Drawing.Size(91, 23)
-        Me.clearButt.TabIndex = 16
-        Me.clearButt.Text = "Clear Order"
-        Me.clearButt.UseVisualStyleBackColor = False
-        '
-        'compButt
-        '
-        Me.compButt.BackColor = System.Drawing.Color.Black
-        Me.compButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.compButt.ForeColor = System.Drawing.Color.White
-        Me.compButt.Location = New System.Drawing.Point(890, 533)
-        Me.compButt.Name = "compButt"
-        Me.compButt.Size = New System.Drawing.Size(91, 23)
-        Me.compButt.TabIndex = 17
-        Me.compButt.Text = "Complete Order"
-        Me.compButt.UseVisualStyleBackColor = False
-        '
-        'totalPriceLbl
-        '
-        Me.totalPriceLbl.AutoSize = True
-        Me.totalPriceLbl.BackColor = System.Drawing.Color.Black
-        Me.totalPriceLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.totalPriceLbl.ForeColor = System.Drawing.Color.White
-        Me.totalPriceLbl.Location = New System.Drawing.Point(967, 517)
-        Me.totalPriceLbl.Name = "totalPriceLbl"
-        Me.totalPriceLbl.Size = New System.Drawing.Size(14, 13)
-        Me.totalPriceLbl.TabIndex = 18
-        Me.totalPriceLbl.Text = "0"
-        '
-        'cokeFloat
-        '
-        Me.cokeFloat.BackColor = System.Drawing.Color.Black
-        Me.cokeFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cokeFloat.ForeColor = System.Drawing.Color.White
-        Me.cokeFloat.Location = New System.Drawing.Point(26, 37)
-        Me.cokeFloat.Name = "cokeFloat"
-        Me.cokeFloat.Size = New System.Drawing.Size(132, 99)
-        Me.cokeFloat.TabIndex = 0
-        Me.cokeFloat.Text = "Coke Float"
-        Me.cokeFloat.UseVisualStyleBackColor = False
-        '
-        'spriteFloat
-        '
-        Me.spriteFloat.BackColor = System.Drawing.Color.Black
-        Me.spriteFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.spriteFloat.ForeColor = System.Drawing.Color.White
-        Me.spriteFloat.Location = New System.Drawing.Point(191, 37)
-        Me.spriteFloat.Name = "spriteFloat"
-        Me.spriteFloat.Size = New System.Drawing.Size(132, 99)
-        Me.spriteFloat.TabIndex = 1
-        Me.spriteFloat.Text = "Sprite Float"
-        Me.spriteFloat.UseVisualStyleBackColor = False
-        '
-        'rootBFloat
-        '
-        Me.rootBFloat.BackColor = System.Drawing.Color.Black
-        Me.rootBFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rootBFloat.ForeColor = System.Drawing.Color.White
-        Me.rootBFloat.Location = New System.Drawing.Point(353, 37)
-        Me.rootBFloat.Name = "rootBFloat"
-        Me.rootBFloat.Size = New System.Drawing.Size(132, 99)
-        Me.rootBFloat.TabIndex = 2
-        Me.rootBFloat.Text = "Rootbeer Float"
-        Me.rootBFloat.UseVisualStyleBackColor = False
-        '
-        'mochaFloat
-        '
-        Me.mochaFloat.BackColor = System.Drawing.Color.Black
-        Me.mochaFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.mochaFloat.ForeColor = System.Drawing.Color.White
-        Me.mochaFloat.Location = New System.Drawing.Point(191, 37)
-        Me.mochaFloat.Name = "mochaFloat"
-        Me.mochaFloat.Size = New System.Drawing.Size(132, 99)
-        Me.mochaFloat.TabIndex = 4
-        Me.mochaFloat.Text = "Mocha Float"
-        Me.mochaFloat.UseVisualStyleBackColor = False
-        '
-        'cofFloat
-        '
-        Me.cofFloat.BackColor = System.Drawing.Color.Black
-        Me.cofFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cofFloat.ForeColor = System.Drawing.Color.White
-        Me.cofFloat.Location = New System.Drawing.Point(26, 37)
-        Me.cofFloat.Name = "cofFloat"
-        Me.cofFloat.Size = New System.Drawing.Size(132, 99)
-        Me.cofFloat.TabIndex = 3
-        Me.cofFloat.Text = "Coffee Float"
-        Me.cofFloat.UseVisualStyleBackColor = False
-        '
-        'blueOceanFloat
-        '
-        Me.blueOceanFloat.BackColor = System.Drawing.Color.Black
-        Me.blueOceanFloat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.blueOceanFloat.ForeColor = System.Drawing.Color.White
-        Me.blueOceanFloat.Location = New System.Drawing.Point(26, 37)
-        Me.blueOceanFloat.Name = "blueOceanFloat"
-        Me.blueOceanFloat.Size = New System.Drawing.Size(132, 99)
-        Me.blueOceanFloat.TabIndex = 4
-        Me.blueOceanFloat.Text = "Blue Ocean Float"
-        Me.blueOceanFloat.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.FLOATS_POS_SYSTEM.My.Resources.Resources.floatsIcon
-        Me.PictureBox1.Location = New System.Drawing.Point(333, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(384, 127)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'backButt
-        '
-        Me.backButt.AutoSize = True
-        Me.backButt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backButt.ForeColor = System.Drawing.Color.White
-        Me.backButt.Location = New System.Drawing.Point(39, 27)
-        Me.backButt.Name = "backButt"
-        Me.backButt.Size = New System.Drawing.Size(58, 16)
-        Me.backButt.TabIndex = 19
-        Me.backButt.Text = "< Back"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1040, 626)
-        Me.Controls.Add(Me.backButt)
-        Me.Controls.Add(Me.totalPriceLbl)
-        Me.Controls.Add(Me.compButt)
-        Me.Controls.Add(Me.clearButt)
-        Me.Controls.Add(Me.removeButt)
-        Me.Controls.Add(Me.totalLbl)
-        Me.Controls.Add(Me.mediumSizeButt)
-        Me.Controls.Add(Me.largeSizeButt)
-        Me.Controls.Add(Me.itemQuantity)
-        Me.Controls.Add(Me.minusButt)
-        Me.Controls.Add(Me.addButt)
-        Me.Controls.Add(Me.itemQuantityLbl)
-        Me.Controls.Add(Me.sizeLbl)
-        Me.Controls.Add(Me.priceLabel)
-        Me.Controls.Add(Me.sizeLabel)
-        Me.Controls.Add(Me.quantityLabel)
-        Me.Controls.Add(Me.ItemNamelbl)
-        Me.Controls.Add(Me.listOfItemOrder)
-        Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
-        Me.TabControl1.ResumeLayout(False)
-        Me.classicTab.ResumeLayout(False)
-        Me.caffeineTab.ResumeLayout(False)
-        Me.candyTab.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        TabControl1 = New TabControl()
+        classicTab = New TabPage()
+        rootBFloat = New Button()
+        spriteFloat = New Button()
+        cokeFloat = New Button()
+        caffeineTab = New TabPage()
+        mochaFloat = New Button()
+        cofCaramelFloat = New Button()
+        candyTab = New TabPage()
+        blueOceanFloat = New Button()
+        ItemNamelbl = New Label()
+        quantityLabel = New Label()
+        sizeLabel = New Label()
+        priceLabel = New Label()
+        sizeLbl = New Label()
+        itemQuantityLbl = New Label()
+        addButt = New Button()
+        minusButt = New Button()
+        itemQuantity = New Label()
+        largeSizeButt = New Button()
+        mediumSizeButt = New Button()
+        totalLbl = New Label()
+        removeButt = New Button()
+        clearButt = New Button()
+        compButt = New Button()
+        totalPriceLbl = New Label()
+        PictureBox1 = New PictureBox()
+        backButt = New Label()
+        DataGridView1 = New DataGridView()
+        selectedSize = New Label()
+        TabControl1.SuspendLayout()
+        classicTab.SuspendLayout()
+        caffeineTab.SuspendLayout()
+        candyTab.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' TabControl1
+        ' 
+        TabControl1.Controls.Add(classicTab)
+        TabControl1.Controls.Add(caffeineTab)
+        TabControl1.Controls.Add(candyTab)
+        TabControl1.Location = New Point(70, 223)
+        TabControl1.Margin = New Padding(5, 6, 5, 6)
+        TabControl1.Name = "TabControl1"
+        TabControl1.SelectedIndex = 0
+        TabControl1.Size = New Size(948, 634)
+        TabControl1.TabIndex = 1
+        ' 
+        ' classicTab
+        ' 
+        classicTab.Controls.Add(rootBFloat)
+        classicTab.Controls.Add(spriteFloat)
+        classicTab.Controls.Add(cokeFloat)
+        classicTab.Location = New Point(4, 34)
+        classicTab.Margin = New Padding(5, 6, 5, 6)
+        classicTab.Name = "classicTab"
+        classicTab.Padding = New Padding(5, 6, 5, 6)
+        classicTab.Size = New Size(940, 596)
+        classicTab.TabIndex = 0
+        classicTab.Text = "Classic"
+        classicTab.UseVisualStyleBackColor = True
+        ' 
+        ' rootBFloat
+        ' 
+        rootBFloat.BackColor = Color.Black
+        rootBFloat.FlatStyle = FlatStyle.Flat
+        rootBFloat.ForeColor = Color.White
+        rootBFloat.Location = New Point(588, 71)
+        rootBFloat.Margin = New Padding(5, 6, 5, 6)
+        rootBFloat.Name = "rootBFloat"
+        rootBFloat.Size = New Size(220, 190)
+        rootBFloat.TabIndex = 2
+        rootBFloat.Text = "Rootbeer Float"
+        rootBFloat.UseVisualStyleBackColor = False
+        ' 
+        ' spriteFloat
+        ' 
+        spriteFloat.BackColor = Color.Black
+        spriteFloat.FlatStyle = FlatStyle.Flat
+        spriteFloat.ForeColor = Color.White
+        spriteFloat.Location = New Point(318, 71)
+        spriteFloat.Margin = New Padding(5, 6, 5, 6)
+        spriteFloat.Name = "spriteFloat"
+        spriteFloat.Size = New Size(220, 190)
+        spriteFloat.TabIndex = 1
+        spriteFloat.Text = "Sprite Float"
+        spriteFloat.UseVisualStyleBackColor = False
+        ' 
+        ' cokeFloat
+        ' 
+        cokeFloat.BackColor = Color.Black
+        cokeFloat.FlatStyle = FlatStyle.Flat
+        cokeFloat.ForeColor = Color.White
+        cokeFloat.Location = New Point(43, 71)
+        cokeFloat.Margin = New Padding(5, 6, 5, 6)
+        cokeFloat.Name = "cokeFloat"
+        cokeFloat.Size = New Size(220, 190)
+        cokeFloat.TabIndex = 0
+        cokeFloat.Text = "Coke Float"
+        cokeFloat.UseVisualStyleBackColor = False
+        ' 
+        ' caffeineTab
+        ' 
+        caffeineTab.Controls.Add(mochaFloat)
+        caffeineTab.Controls.Add(cofCaramelFloat)
+        caffeineTab.Location = New Point(4, 34)
+        caffeineTab.Margin = New Padding(5, 6, 5, 6)
+        caffeineTab.Name = "caffeineTab"
+        caffeineTab.Padding = New Padding(5, 6, 5, 6)
+        caffeineTab.Size = New Size(940, 596)
+        caffeineTab.TabIndex = 1
+        caffeineTab.Text = "Caffeine"
+        caffeineTab.UseVisualStyleBackColor = True
+        ' 
+        ' mochaFloat
+        ' 
+        mochaFloat.BackColor = Color.Black
+        mochaFloat.FlatStyle = FlatStyle.Flat
+        mochaFloat.ForeColor = Color.White
+        mochaFloat.Location = New Point(318, 71)
+        mochaFloat.Margin = New Padding(5, 6, 5, 6)
+        mochaFloat.Name = "mochaFloat"
+        mochaFloat.Size = New Size(220, 190)
+        mochaFloat.TabIndex = 4
+        mochaFloat.Text = "Dark Mocha Float"
+        mochaFloat.UseVisualStyleBackColor = False
+        ' 
+        ' cofCaramelFloat
+        ' 
+        cofCaramelFloat.BackColor = Color.Black
+        cofCaramelFloat.FlatStyle = FlatStyle.Flat
+        cofCaramelFloat.ForeColor = Color.White
+        cofCaramelFloat.Location = New Point(43, 71)
+        cofCaramelFloat.Margin = New Padding(5, 6, 5, 6)
+        cofCaramelFloat.Name = "cofCaramelFloat"
+        cofCaramelFloat.Size = New Size(220, 190)
+        cofCaramelFloat.TabIndex = 3
+        cofCaramelFloat.Text = "Coffee Caramel Float"
+        cofCaramelFloat.UseVisualStyleBackColor = False
+        ' 
+        ' candyTab
+        ' 
+        candyTab.Controls.Add(blueOceanFloat)
+        candyTab.Location = New Point(4, 34)
+        candyTab.Margin = New Padding(5, 6, 5, 6)
+        candyTab.Name = "candyTab"
+        candyTab.Padding = New Padding(5, 6, 5, 6)
+        candyTab.Size = New Size(940, 596)
+        candyTab.TabIndex = 2
+        candyTab.Text = "Candy"
+        candyTab.UseVisualStyleBackColor = True
+        ' 
+        ' blueOceanFloat
+        ' 
+        blueOceanFloat.BackColor = Color.Black
+        blueOceanFloat.FlatStyle = FlatStyle.Flat
+        blueOceanFloat.ForeColor = Color.White
+        blueOceanFloat.Location = New Point(43, 71)
+        blueOceanFloat.Margin = New Padding(5, 6, 5, 6)
+        blueOceanFloat.Name = "blueOceanFloat"
+        blueOceanFloat.Size = New Size(220, 190)
+        blueOceanFloat.TabIndex = 4
+        blueOceanFloat.Text = "Ocean Float"
+        blueOceanFloat.UseVisualStyleBackColor = False
+        ' 
+        ' ItemNamelbl
+        ' 
+        ItemNamelbl.AutoSize = True
+        ItemNamelbl.BackColor = Color.Black
+        ItemNamelbl.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ItemNamelbl.ForeColor = Color.White
+        ItemNamelbl.Location = New Point(1117, 223)
+        ItemNamelbl.Margin = New Padding(5, 0, 5, 0)
+        ItemNamelbl.Name = "ItemNamelbl"
+        ItemNamelbl.Size = New Size(99, 20)
+        ItemNamelbl.TabIndex = 3
+        ItemNamelbl.Text = "Item Name"
+        ' 
+        ' quantityLabel
+        ' 
+        quantityLabel.AutoSize = True
+        quantityLabel.BackColor = Color.Black
+        quantityLabel.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        quantityLabel.ForeColor = Color.White
+        quantityLabel.Location = New Point(1292, 223)
+        quantityLabel.Margin = New Padding(5, 0, 5, 0)
+        quantityLabel.Name = "quantityLabel"
+        quantityLabel.Size = New Size(79, 20)
+        quantityLabel.TabIndex = 4
+        quantityLabel.Text = "Quantity"
+        ' 
+        ' sizeLabel
+        ' 
+        sizeLabel.AutoSize = True
+        sizeLabel.BackColor = Color.Black
+        sizeLabel.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        sizeLabel.ForeColor = Color.White
+        sizeLabel.Location = New Point(1452, 223)
+        sizeLabel.Margin = New Padding(5, 0, 5, 0)
+        sizeLabel.Name = "sizeLabel"
+        sizeLabel.Size = New Size(46, 20)
+        sizeLabel.TabIndex = 5
+        sizeLabel.Text = "Size"
+        ' 
+        ' priceLabel
+        ' 
+        priceLabel.AutoSize = True
+        priceLabel.BackColor = Color.Black
+        priceLabel.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        priceLabel.ForeColor = Color.White
+        priceLabel.Location = New Point(1575, 223)
+        priceLabel.Margin = New Padding(5, 0, 5, 0)
+        priceLabel.Name = "priceLabel"
+        priceLabel.Size = New Size(53, 20)
+        priceLabel.TabIndex = 6
+        priceLabel.Text = "Price"
+        ' 
+        ' sizeLbl
+        ' 
+        sizeLbl.AutoSize = True
+        sizeLbl.BackColor = Color.Black
+        sizeLbl.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        sizeLbl.ForeColor = Color.White
+        sizeLbl.Location = New Point(70, 885)
+        sizeLbl.Margin = New Padding(5, 0, 5, 0)
+        sizeLbl.Name = "sizeLbl"
+        sizeLbl.Size = New Size(46, 20)
+        sizeLbl.TabIndex = 7
+        sizeLbl.Text = "Size"
+        ' 
+        ' itemQuantityLbl
+        ' 
+        itemQuantityLbl.AutoSize = True
+        itemQuantityLbl.BackColor = Color.Black
+        itemQuantityLbl.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        itemQuantityLbl.ForeColor = Color.White
+        itemQuantityLbl.Location = New Point(864, 883)
+        itemQuantityLbl.Margin = New Padding(5, 0, 5, 0)
+        itemQuantityLbl.Name = "itemQuantityLbl"
+        itemQuantityLbl.Size = New Size(85, 22)
+        itemQuantityLbl.TabIndex = 8
+        itemQuantityLbl.Text = "Quantity"
+        ' 
+        ' addButt
+        ' 
+        addButt.BackColor = Color.Black
+        addButt.FlatStyle = FlatStyle.Flat
+        addButt.ForeColor = Color.White
+        addButt.Location = New Point(951, 925)
+        addButt.Margin = New Padding(5, 6, 5, 6)
+        addButt.Name = "addButt"
+        addButt.Size = New Size(38, 44)
+        addButt.TabIndex = 9
+        addButt.Text = "+"
+        addButt.UseVisualStyleBackColor = False
+        ' 
+        ' minusButt
+        ' 
+        minusButt.BackColor = Color.Black
+        minusButt.FlatStyle = FlatStyle.Flat
+        minusButt.ForeColor = Color.White
+        minusButt.Location = New Point(842, 925)
+        minusButt.Margin = New Padding(5, 6, 5, 6)
+        minusButt.Name = "minusButt"
+        minusButt.Size = New Size(38, 44)
+        minusButt.TabIndex = 10
+        minusButt.Text = "-"
+        minusButt.UseVisualStyleBackColor = False
+        ' 
+        ' itemQuantity
+        ' 
+        itemQuantity.AutoSize = True
+        itemQuantity.BackColor = Color.Black
+        itemQuantity.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        itemQuantity.ForeColor = Color.White
+        itemQuantity.Location = New Point(899, 925)
+        itemQuantity.Margin = New Padding(5, 0, 5, 0)
+        itemQuantity.Name = "itemQuantity"
+        itemQuantity.Size = New Size(32, 33)
+        itemQuantity.TabIndex = 11
+        itemQuantity.Text = "1"
+        ' 
+        ' largeSizeButt
+        ' 
+        largeSizeButt.BackColor = Color.Black
+        largeSizeButt.FlatStyle = FlatStyle.Flat
+        largeSizeButt.ForeColor = Color.White
+        largeSizeButt.Location = New Point(263, 925)
+        largeSizeButt.Margin = New Padding(5, 6, 5, 6)
+        largeSizeButt.Name = "largeSizeButt"
+        largeSizeButt.Size = New Size(152, 44)
+        largeSizeButt.TabIndex = 12
+        largeSizeButt.Text = "Large"
+        largeSizeButt.UseVisualStyleBackColor = False
+        ' 
+        ' mediumSizeButt
+        ' 
+        mediumSizeButt.BackColor = Color.Black
+        mediumSizeButt.FlatStyle = FlatStyle.Flat
+        mediumSizeButt.ForeColor = Color.White
+        mediumSizeButt.Location = New Point(70, 925)
+        mediumSizeButt.Margin = New Padding(5, 6, 5, 6)
+        mediumSizeButt.Name = "mediumSizeButt"
+        mediumSizeButt.Size = New Size(152, 44)
+        mediumSizeButt.TabIndex = 13
+        mediumSizeButt.Text = "Regular"
+        mediumSizeButt.UseVisualStyleBackColor = False
+        ' 
+        ' totalLbl
+        ' 
+        totalLbl.AutoSize = True
+        totalLbl.BackColor = Color.Black
+        totalLbl.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        totalLbl.ForeColor = Color.White
+        totalLbl.Location = New Point(1341, 878)
+        totalLbl.Margin = New Padding(5, 0, 5, 0)
+        totalLbl.Name = "totalLbl"
+        totalLbl.Size = New Size(148, 29)
+        totalLbl.TabIndex = 14
+        totalLbl.Text = "Total Price:"
+        ' 
+        ' removeButt
+        ' 
+        removeButt.BackColor = Color.Black
+        removeButt.FlatStyle = FlatStyle.Flat
+        removeButt.ForeColor = Color.White
+        removeButt.Location = New Point(1108, 925)
+        removeButt.Margin = New Padding(5, 6, 5, 6)
+        removeButt.Name = "removeButt"
+        removeButt.Size = New Size(152, 44)
+        removeButt.TabIndex = 15
+        removeButt.Text = "Remove Item"
+        removeButt.UseVisualStyleBackColor = False
+        ' 
+        ' clearButt
+        ' 
+        clearButt.BackColor = Color.Black
+        clearButt.FlatStyle = FlatStyle.Flat
+        clearButt.ForeColor = Color.White
+        clearButt.Location = New Point(1122, 1081)
+        clearButt.Margin = New Padding(5, 6, 5, 6)
+        clearButt.Name = "clearButt"
+        clearButt.Size = New Size(152, 44)
+        clearButt.TabIndex = 16
+        clearButt.Text = "Clear Order"
+        clearButt.UseVisualStyleBackColor = False
+        ' 
+        ' compButt
+        ' 
+        compButt.BackColor = Color.Black
+        compButt.FlatStyle = FlatStyle.Flat
+        compButt.ForeColor = Color.White
+        compButt.Location = New Point(1467, 925)
+        compButt.Margin = New Padding(5, 6, 5, 6)
+        compButt.Name = "compButt"
+        compButt.Size = New Size(152, 44)
+        compButt.TabIndex = 17
+        compButt.Text = "Complete Order"
+        compButt.UseVisualStyleBackColor = False
+        ' 
+        ' totalPriceLbl
+        ' 
+        totalPriceLbl.AutoSize = True
+        totalPriceLbl.BackColor = Color.Black
+        totalPriceLbl.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        totalPriceLbl.ForeColor = Color.White
+        totalPriceLbl.Location = New Point(1499, 876)
+        totalPriceLbl.Margin = New Padding(5, 0, 5, 0)
+        totalPriceLbl.Name = "totalPriceLbl"
+        totalPriceLbl.Size = New Size(27, 29)
+        totalPriceLbl.TabIndex = 18
+        totalPriceLbl.Text = "0"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.floatsIcon
+        PictureBox1.Location = New Point(555, 0)
+        PictureBox1.Margin = New Padding(5, 6, 5, 6)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(640, 162)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
+        ' 
+        ' backButt
+        ' 
+        backButt.AutoSize = True
+        backButt.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        backButt.ForeColor = Color.White
+        backButt.Location = New Point(65, 52)
+        backButt.Margin = New Padding(5, 0, 5, 0)
+        backButt.Name = "backButt"
+        backButt.Size = New Size(79, 25)
+        backButt.TabIndex = 19
+        backButt.Text = "< Back"
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.BackgroundColor = Color.White
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.GridColor = SystemColors.Menu
+        DataGridView1.Location = New Point(1108, 257)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 62
+        DataGridView1.Size = New Size(511, 595)
+        DataGridView1.TabIndex = 20
+        ' 
+        ' selectedSize
+        ' 
+        selectedSize.AutoSize = True
+        selectedSize.BackColor = Color.Black
+        selectedSize.Font = New Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        selectedSize.ForeColor = Color.White
+        selectedSize.Location = New Point(147, 880)
+        selectedSize.Margin = New Padding(5, 0, 5, 0)
+        selectedSize.Name = "selectedSize"
+        selectedSize.Size = New Size(95, 26)
+        selectedSize.TabIndex = 21
+        selectedSize.Text = "Regular"
+        ' 
+        ' Form2
+        ' 
+        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Black
+        ClientSize = New Size(1667, 1002)
+        Controls.Add(selectedSize)
+        Controls.Add(DataGridView1)
+        Controls.Add(backButt)
+        Controls.Add(totalPriceLbl)
+        Controls.Add(compButt)
+        Controls.Add(clearButt)
+        Controls.Add(removeButt)
+        Controls.Add(totalLbl)
+        Controls.Add(mediumSizeButt)
+        Controls.Add(largeSizeButt)
+        Controls.Add(itemQuantity)
+        Controls.Add(minusButt)
+        Controls.Add(addButt)
+        Controls.Add(itemQuantityLbl)
+        Controls.Add(sizeLbl)
+        Controls.Add(priceLabel)
+        Controls.Add(sizeLabel)
+        Controls.Add(quantityLabel)
+        Controls.Add(ItemNamelbl)
+        Controls.Add(TabControl1)
+        Controls.Add(PictureBox1)
+        Margin = New Padding(5, 6, 5, 6)
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "Form2"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Form1"
+        TabControl1.ResumeLayout(False)
+        classicTab.ResumeLayout(False)
+        caffeineTab.ResumeLayout(False)
+        candyTab.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
@@ -443,7 +493,6 @@ Partial Class Form2
     Friend WithEvents classicTab As TabPage
     Friend WithEvents caffeineTab As TabPage
     Friend WithEvents candyTab As TabPage
-    Friend WithEvents listOfItemOrder As ListBox
     Friend WithEvents ItemNamelbl As Label
     Friend WithEvents quantityLabel As Label
     Friend WithEvents sizeLabel As Label
@@ -464,7 +513,9 @@ Partial Class Form2
     Friend WithEvents rootBFloat As Button
     Friend WithEvents spriteFloat As Button
     Friend WithEvents mochaFloat As Button
-    Friend WithEvents cofFloat As Button
+    Friend WithEvents cofCaramelFloat As Button
     Friend WithEvents blueOceanFloat As Button
     Friend WithEvents backButt As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents selectedSize As Label
 End Class

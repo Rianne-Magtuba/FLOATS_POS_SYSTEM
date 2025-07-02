@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
+
 Public Class LoginForm
     'method for connecting to the database named "FLOATS_POS_SYSTEM" to the table "Admins"
     Private Function AdminLogin(username As String, password As String) As Boolean
@@ -41,3 +42,5 @@ Public Class LoginForm
 
     End Sub
 End Class
+
+
